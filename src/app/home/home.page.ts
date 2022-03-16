@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GooglePlus } from '@ionic-native/google-plus/ngx';
+import { GooglePlus } from '@awesome-cordova-plugins/google-plus/ngx';
 
 @Component({
   selector: 'app-home',
