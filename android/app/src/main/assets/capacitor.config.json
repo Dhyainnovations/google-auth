@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "google-a",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
