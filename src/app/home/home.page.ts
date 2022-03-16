@@ -12,13 +12,13 @@ export class HomePage {
 
   constructor(
     private googlePlus: GooglePlus
-  ) {}
+  ) { }
 
   googleSignIn() {
     this.googlePlus.login({})
-      .then(result => this.userData = result)
-      .catch(err => this.userData = `Error ${JSON.stringify(err)}`);
-      alert( this.userData.name)
+      .then(res => alert(res))
+      .catch(err => alert(err));
+
   }
 
 }
