@@ -1,10 +1,7 @@
 {
-  "name": "google-a",
+  "name": "notifcation",
   "integrations": {
-    "capacitor": {},
-    "cordova": {
-      "enabled": false
-    }
+    "capacitor": {}
   },
   "type": "angular"
 }

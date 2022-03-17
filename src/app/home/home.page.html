@@ -1,12 +1,29 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Getting Things Done!
+      Blank
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <button ion-button block (click)="pushnotification()" style="padding:20px;margin: 20px;">Push Notification</button>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
+  <div id="container">
+    <ion-button (click)="single_notification()">
+      Single Notification
+    </ion-button>
+
+    <ion-button (click)="multi_notification()">
+      Multi Notifcations
+    </ion-button>
+
+    <ion-button (click)="delayed_notification()">
+      Delayed Notification
+    </ion-button>
+  </div>
 </ion-content>

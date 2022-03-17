@@ -13,8 +13,6 @@ dependencies {
     implementation project(':capacitor-haptics')
     implementation project(':capacitor-keyboard')
     implementation project(':capacitor-status-bar')
-    implementation "com.google.android.gms:play-services-auth:15.0.1"
-    implementation "com.google.android.gms:play-services-identity:15.0.1"
     implementation "com.android.support:support-v4:26.+"
 }
 apply from: "../../node_modules/cordova-plugin-local-notification/src/android/build/localnotification.gradle"
