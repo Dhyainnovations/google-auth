@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GooglePlus } from '@awesome-cordova-plugins/google-plus/ngx';
+import { LocalNotifications } from '@awesome-cordova-plugins/local-notifications/ngx';
 
 @Component({
   selector: 'app-home',
@@ -8,17 +8,17 @@ import { GooglePlus } from '@awesome-cordova-plugins/google-plus/ngx';
 })
 export class HomePage {
 
-  userData: any = {};
 
-  constructor(
-    private googlePlus: GooglePlus
-  ) { }
 
-  googleSignIn() {
-    this.googlePlus.login({})
-      .then(res => alert(res))
-      .catch(err => alert(err));
+  constructor(private localNotifications: LocalNotifications) { }
 
+
+
+  pushnotification() {
+    this.localNotifications.schedule({
+      id: 1,
+      text: 'Single ILocalNotification',
+      data: { secret: "key" }
+    });
   }
-
 }
