@@ -22,7 +22,8 @@ export class HomePage {
       extra: "extra"
     }
     LocalNotifications.schedule({ notifications: [options] }).then(() => {
-      alert("Notification");
+      alert("Notification" + options.schedule);
+      alert("Notification" + options);
     })
   }
 }
